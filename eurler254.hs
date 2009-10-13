@@ -1,0 +1,5 @@
+-- 
+-- f(n) = the sum of the factorials of digits of n
+-- sf(n) = 	the sum of the digits of the sum of the factorials of the digits of n
+-- g(i) such that sf(n) = i
+-- 

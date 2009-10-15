@@ -35,6 +35,6 @@ nonprimes = serve . foldTree mergeP . map multiples $ tail primes
     serve (VIP x xs) = x:serve xs
     serve (Crowd xs) = xs
 
-main = print $ primes !! 10000
+main = print $ primes !! 10000000
 
 

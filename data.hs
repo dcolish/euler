@@ -11,7 +11,7 @@ x = Some 3
 
 inc :: Possibly Int -> Possibly Int
 inc (Some x) = Some (x + 1)
-int None = None
+inc None = None
 
 dec :: (Bounded a, Enum a, Eq a) => Possibly a -> Possibly a
 dec (Some x)

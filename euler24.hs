@@ -3,7 +3,9 @@
 
 import Data.List
 
-foo = sort $ permutations "0123456789"
+--foo :: [Integer]
+foo =  Data.List.sort $ permutations "0123456789"
+
 
 main = print $ foo !! 999999
 

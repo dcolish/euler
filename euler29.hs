@@ -18,12 +18,16 @@
 
 import Data.List
 
+somepower :: (Num a) => a -> [a]
 somepower x = [x^n | n <- [2..100]]
 
+myMap :: [Integer]
 myMap = nub $ sort $ concatMap(somepower) foo
 
+foo :: [Integer]
 foo = [ x | x <- [2..100]]
 
+main :: IO ()
 main = print $ length $ myMap
 
 

@@ -2,6 +2,8 @@
 -- 1^(1) + 2^(2) + 3^(3) + ... + -- 1000^(1000)
 --
 
+foo :: [Integer]
 foo = [ x^x | x <- [1..1000] ]
 
+main :: IO()
 main = print $ reverse . take 10 . reverse . show $ sum foo

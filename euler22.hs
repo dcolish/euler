@@ -4,6 +4,7 @@ import Data.Char
 import Data.List
 
 
+
 names :: IO [[Char]]
 names = do
   meh <- return <$> readFile "euler22.in"

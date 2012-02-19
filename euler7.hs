@@ -1,5 +1,5 @@
 -- what is the 10001st prime number
---
+-- Not my sieve, forget where i found it
 data People a = VIP a (People a) | Crowd [a]
 
 mergeP :: Ord a => People a -> People a -> People a

@@ -2,7 +2,7 @@
 --
 
 fibs :: [Integer]
-fibs = 1: 1 : [ i | i <- zipWith (+) fibs (tail fibs)]
+fibs = 0: 1 : [ i | i <- zipWith (+) fibs (tail fibs)]
 
 nL n = ( n , length $ show n)
 
